@@ -21,5 +21,5 @@ while True:
         if(data == "quit"):
             break
         else:
-            conn.send(data.encode())
+            conn.send(data)
 s.close()
