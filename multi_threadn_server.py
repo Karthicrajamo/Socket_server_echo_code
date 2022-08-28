@@ -57,7 +57,7 @@ def broadcast(server_socket, client_socket, message):
         
         if socket != server_socket and socket != client_socket:
             try:
-                print("hiii")
+                # print("hiii")
                 socket.sent(message.encode())
             except:
                 

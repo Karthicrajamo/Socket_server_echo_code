@@ -21,5 +21,12 @@ while True:
         if(data == "quit"):
             break
         else:
-            conn.send(data)
+            print("--> {}".format(data))
+            msg = input("<--> ")
+            
+            if not msg:
+                continue
+            else:
+                conn.sendall(msg.encode())
+            # conn.send(data)
 s.close()
