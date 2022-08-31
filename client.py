@@ -9,6 +9,11 @@ while True:
             print("No Data")
         else:
             s.sendall(msg.encode())
-            print (s.recv(1024).decode())
+            data = s.recv(1024).decode()
+            print (data)
+             
+        if msg == "quit":
+            break
+            
     # close the connection
 s.close()  
